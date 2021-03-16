@@ -1,0 +1,79 @@
+EASY
+1. let num1=5, num2=13, num3=7, num4=21, num5=48;
+let sum = num1+num2+num3+num4+num5;
+console.log(sum)
+VM291:1 94
+
+2. let number = prompt("enter your number");
+number % 2 === 0? console.log("even"):console.log("odd");
+VM740:1 odd
+
+3. let num1=129 ,num2=251
+num1>num2 ? console.log("max is ",num1," and min is ",num2): console.log("max is ",num2," and min is ",num1)
+VM1028:1 max is  251  and min is  129
+
+4. let num1=8, num2=23, num3=17
+if (num1>num2 && num1>num3)
+{console.log("max is ", num1);} else if (num2>num1 && num2>num3){console.log("max is ",num2);} else {console.log("max is ",num3)}
+VM1603:2 max is  23
+
+5. let num1=35, num2=29 ,num3=46
+if (num1<num2 && num1<num3)
+{console.log("min is ", num1);} else if (num2<num1 && num2<num3){console.log("min is ",num2);} else {console.log("min is ",num3)}
+VM1665:2 min is  29
+
+6. var month = prompt("enter your month")
+if (month === "january" || month === "march" || month === "may" || month === "july" || month === "august" || month === "october" || month === "december") { console.log(month ,"has 31 days")} else if (month === "february") {console.log(month," has 28/29 days")} else {console.log(month," has 30 days")}
+VM2377:1 january has 31 days
+
+INTERMEDIATE
+1. let result = []; 
+function fizzbuzzzz () {
+    for (var i=1;i<=100;i++){
+        if (i%3 === 0 && i%5 === 0) {result.push("fizzbuzz")}
+        else if (i%5 === 0) {result.push("buzz")}
+        else if (i%3 === 0 ) {result.push("fizz")}
+        else {result.push(i)}} return result;
+}
+fizzbuzzzz()
+(100) [1, 2, "fizz", 4, "buzz", "fizz", 7, 8, "fizz", "buzz", 11, "fizz", 13, 14, "fizzbuzz", 16, 17, "fizz", 19, "buzz", "fizz", 22, 23, "fizz", "buzz", 26, "fizz", 28, 29, "fizzbuzz", 31, 32, "fizz", 34, "buzz", "fizz", 37, 38, "fizz", "buzz", 41, "fizz", 43, 44, "fizzbuzz", 46, 47, "fizz", 49, "buzz", "fizz", 52, 53, "fizz", "buzz", 56, "fizz", 58, 59, "fizzbuzz", 61, 62, "fizz", 64, "buzz", "fizz", 67, 68, "fizz", "buzz", 71, "fizz", 73, 74, "fizzbuzz", 76, 77, "fizz", 79, "buzz", "fizz", 82, 83, "fizz", "buzz", 86, "fizz", 88, 89, "fizzbuzz", 91, 92, "fizz", 94, "buzz", "fizz", 97, 98, "fizz", "buzz"]
+
+1. for(var i=1; i<=4; i++){
+   console.log("*".repeat(i));
+}
+*
+**
+***
+To check the loops pattern
+
+2. 
+
+3. let series=[];
+function fibbonacci1 (){
+    for (var i=0;i<=100;i++){
+        if (i<2)
+            series[i]=i;
+        else 
+            series[i] = series[i-1] + series[i-2]
+    } return series;
+}
+(101) [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, 2971215073, 4807526976, 7778742049, 12586269025, 20365011074, 32951280099, 53316291173, 86267571272, 139583862445, 225851433717, 365435296162, 591286729879, 956722026041, 1548008755920, 2504730781961, 4052739537881, 6557470319842, 10610209857723, 17167680177565, 27777890035288, 44945570212853, 72723460248141, 117669030460994, 190392490709135, 308061521170129, 498454011879264, 806515533049393, 1304969544928657, 2111485077978050, 3416454622906707, 5527939700884757, 8944394323791464, 14472334024676220, 23416728348467684, 37889062373143900, 61305790721611580, 99194853094755490, 160500643816367070, 259695496911122560, 420196140727489660, 679891637638612200, 1100087778366101900, 1779979416004714000, 2880067194370816000, 4660046610375530000, 7540113804746346000, 12200160415121877000, 19740274219868226000, 31940434634990100000, 51680708854858330000, 83621143489848430000, 135301852344706760000, 218922995834555200000, …]
+
+4. let num = prompt(“enter your number”); 
+function fact2 (num){ let sum=1;
+    for(var i =num; i>0;i--){  sum *=i;
+                            }return sum;}
+fact2(num)
+120
+
+5. 
+
+6. 
+function findDay(day){
+    if (day ==="saturday" || day==="sunday")
+        console.log(day, " is a weekend")
+    else 
+        console.log(day, " is a weekday")
+}
+let day = prompt("enter your day");
+findDay(day)
