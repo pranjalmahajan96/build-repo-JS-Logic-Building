@@ -1,0 +1,46 @@
+EASY 
+1. const power = (a,b) => {let ans=1; for (let i=1;i<=b;i++){ ans *= a;} return ans;}
+power(2,3)
+8
+
+2. const areaOfAHexagon = len => len*len/2*3*Math.sqrt(3);
+areaOfAHexagon(8)
+166.2768775266122
+
+3. function noOfWords2 (inpStr){
+    let ans =0;
+    for (let i=0;i<inpStr.length;i++){
+        if(inpStr(i)===" ")
+            ans+=1;
+    }
+    return ans;
+}
+noOfWords2(hey i am pranjal)
+VM2869:1 Uncaught SyntaxError: missing ) after argument list
+
+4. function findMin(...rest){
+    let min = Math.min(...rest); return min; }   
+findMin(5,4,9,3,1)
+1
+
+5. const findMax = (...rest) => Math.max(...rest);
+findMax(5,7,6,8,9,11,0)
+11
+
+6. const typeOfTriangle1 = (a,b,c) => { let ans = " "; if(a+b+c === 180 ) {if(a===b && b===c && a===c) ans="equilateral triangle";
+                                   else if ((a===b) || (b===c) || (c===a) ) ans="isosceles triangle";
+                                   else if ((a!=b) && (b!=c) && (c!=a)) ans="scalene triangle";
+                                   } else ans="Not a triangle"
+                                   return ans;}
+typeOfTriangle1(80,70,90)
+"Not a triangle"
+typeOfTriangle1(80,80,80)
+"Not a triangle"
+typeOfTriangle1(60,60,60)
+"equilateral triangle"
+typeOfTriangle1(60,60,50)
+"Not a triangle"
+typeOfTriangle1(70,60,50)
+"scalene triangle"
+typeOfTriangle1(70,70,40)
+"isosceles triangle"
