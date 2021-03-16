@@ -1,5 +1,5 @@
 # build-repo-JS-Logic-Building
-Contains solutions to the build-repo of neogcamp 
+Contains solutions to the questions in the build-repo of neogcamp 
 https://github.com/neogcamp/build/tree/main/build-logic
 
 1. Operators, Branching, Loops
